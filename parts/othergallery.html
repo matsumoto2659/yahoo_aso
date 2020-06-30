@@ -1,0 +1,73 @@
+<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script>
+        $(function(){
+$('a img, a').bind({
+    'touchstart': function(e) {
+        $(this).removeClass("notouchstyle").addClass("touchstyle");
+    },
+    'touchend': function(e) {
+        $(this).removeClass("touchstyle").addClass("notouchstyle");
+    }
+});
+});
+    </script>
+	
+	
+<div class="swiper-container">
+ <div class="swiper-wrapper">
+  <div class="swiper-slide"> <a href="https://shopping.geocities.jp/asoboze/asobozeyahoo/gallery/gallery/wformal.html" target="_top">
+  <img src="https://shopping.c.yimg.jp/lib/asoboze/g_wformal_12.jpg" />
+</a>
+  </div>
+  <div class="swiper-slide"> <a href="https://shopping.geocities.jp/asoboze/asobozeyahoo/gallery/gallery/rintosh1.html" target="_top"><img src="https://shopping.c.yimg.jp/lib/asoboze/g_rintosh1_01.jpg"/></a>
+  </div>
+  <div class="swiper-slide"> <a href="https://shopping.geocities.jp/asoboze/asobozeyahoo/gallery/gallery/business1.html" target="_top"><img src="https://shopping.c.yimg.jp/lib/asoboze/g_business1_01.jpg"/></a>
+  </div>
+  <div class="swiper-slide"> <a href="https://shopping.geocities.jp/asoboze/asobozeyahoo/gallery/gallery/business2.html" target="_top"><img src="https://shopping.c.yimg.jp/lib/asoboze/g_business2_01.jpg"/></a>
+  </div>
+  <div class="swiper-slide"> <a href="https://shopping.geocities.jp/asoboze/reviewgallary.html" target="_top"><img src="https://shopping.c.yimg.jp/lib/asoboze/review_thumbnail.jpg"/></a>
+  </div>
+  <div class="swiper-slide"> <a href="https://www.youtube.com/channel/UC_y5hqVTZ-EcXJVsf4VQyrA" target="_top"><img src="https://shopping.c.yimg.jp/lib/asoboze/youtube2.jpg"/></a>
+  </div>
+ </div>
+<!-- ここまでコピー　-->
+     <div class="swiper-pagination"></div>
+    
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+<script type="text/javascript">
+    var mySwiper = new Swiper ('.swiper-container', {
+      loop: true,
+      slidesPerView: 3,
+      spaceBetween: 2,
+	autoplay: {
+		delay: 3000,
+		stopOnLastSlide: false,
+		disableOnInteraction: false,
+		reverseDirection: false
+	},
+	  speed: 6000,
+      centeredSlides : true,
+      pagination: '.swiper-pagination',
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+	  preventClicks: false,
+	  preventClicksPropagation: false, 
+        mousewheel: {
+            forceToAxis: true,
+            invert: true
+        },
+      breakpoints: {
+        759: {
+          slidesPerView: 4,
+          spaceBetween: 10,
+		  speed: 3000,
+        }
+      }
+    });
+	</script>
+

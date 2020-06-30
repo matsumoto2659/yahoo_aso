@@ -1,0 +1,58 @@
+    <link rel="stylesheet" href="https://shopping.geocities.jp/asoboze/asobozeyahoo/cssjs/asoboze_2020sp.css">
+<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://shopping.geocities.jp/asoboze/asobozeyahoo/jquery-3.2.1.min.js"></script>
+<script>
+    $(function() {
+        $("#spmenu_aso").load("https://shopping.geocities.jp/asoboze/asobozeyahoo/parts/2020sidemenu.html");
+    })
+</script>
+<script>
+        $(function() {
+        $(".icon-wrap").click(function() {
+            $(this).toggleClass("active");
+            $("body").toggleClass("fixing");
+            $(".iframe_header").toggleClass("iframe_touched");
+        });
+    });
+$(function() {
+    $(".iframe_open").click(function() {
+        $(".iframe_header").toggleClass("iframe_touched");
+    })
+})
+
+    </script>
+
+<div id="spheader_aso" class="sponly spheader_aso">
+        <div class="head_top">
+            <a href="https://shopping.geocities.jp/asoboze/" target="_top">
+                <img src="https://shopping.geocities.jp/asoboze/asobozeyahoo/images/asoindex_105.png" alt="" class="headtopimg">
+            </a>
+            <div class="kensaku2">
+            <form action="https://store.shopping.yahoo.co.jp/asoboze/search.html" method="get" name="form1" target="_top">
+<!--
+                            <input type="hidden" name="sv" value="6">
+                            <input type="hidden" name="sid" value="362200">
+                            <input type="hidden" name="su" value="https://www.rakuten.co.jp/asoboze/">
+                            <input type="hidden" name="sn" value="asoboze アソボーゼ">
+                            <input type="hidden" name="f" value="A">
+-->
+                   
+
+                          <input type="image" name="image" src="https://shopping.geocities.jp/asoboze/asobozeyahoo/images/meganemushi.svg" value="検索" class="btn">
+                        </form>
+            </div>
+            <div id="humbmenu" class="humbmenu">
+                <input type="checkbox" id="input-humbmenu">
+        <div class="spmenu_aso sponly" id="spmenu_aso">
+        </div>                
+                <label for="input-humbmenu" id="humb-open" class="humb-icon">
+                    <span class="icon-wrap">
+                        <span class="icon-bars"></span>
+                        <span class="icon-bars"></span>
+                        <span class="icon-bars"></span>
+                    </span>
+                </label>
+            </div>
+        </div>
+
+    </div>
