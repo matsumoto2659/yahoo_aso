@@ -305,7 +305,11 @@ a img {
             padding-bottom: 70%;
             padding-top: 2%;
             margin-bottom: 30px;
+			padding-left: 0;
         }
+		.contents_aso {
+        padding: 0;
+    }
         .asomidashi_eng {
             text-align: center;
             font-weight: 700;
@@ -358,6 +362,7 @@ a img {
         .contentbutton .contentsns {
             width: 100%;
             padding: 3px 5%;
+			display: inline-block;
         }
         .contentbutton .contentsns a img {
             width: 50%;
@@ -367,6 +372,8 @@ a img {
         }
         .guide_aso {
             width: 100%;
+			display: inline-block;
+            padding: 0;
         }
         .guide_grids {
             width: 90%;
@@ -554,9 +561,10 @@ input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
         }
         .rank_aso {
             width: 90%;
-            margin: 0 5%;
+            margin: 10px 5%;
             position: relative;
             height: auto;
+			padding: 0;
         }
         .rank_4lines {
             width: 100%;
@@ -758,7 +766,9 @@ input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
     .contents_aso {
         clear: both;
         margin-top: 43px;
+		padding: 0;
     }
+	
     .contents_aso .contentbutton.sponly {
         display: none;
     }
@@ -796,11 +806,13 @@ input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
         .contentbutton .contentsns {
             width: 100%;
             padding: 1vh 2.5%;
+			display: inline-block;
         }
     .contentbutton .contentsns a {
             margin: 0;
             padding: 0;
         border: none;
+		height: 100%;
         display: block;
         float: left;
     }
