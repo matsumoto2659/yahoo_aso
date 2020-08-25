@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
-@media screen and (max-width: 759px) {
+
             .pconly {
                 display: none;
             }
@@ -42,13 +42,8 @@ a img {
     .contents_container img {
         width: 100%;
     }
-	.contents_container button {
-        height: max-content;
-        background:none;
-        border: none;
 
-        }
-		.spheader_aso {
+        .spheader_aso {
             background-color: #666464;
             width: 100%;
             height: 50px;
@@ -137,21 +132,21 @@ a img {
             background-repeat: no-repeat;
         }
         .restock {
-            background-image: url(https://shopping.c.yimg.jp/lib/asoboze/asoindex_23.jpg);
+            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asoindex_23.jpg);
             background-size: contain;
             background-position: right top;
             background-repeat: no-repeat;
 
         }
         .restock_brown {
-            background-image: url(https://shopping.c.yimg.jp/lib/asoboze/asoindex_114.jpg);
+            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asoindex_114.jpg);
             background-size: contain;
             background-position: right top;
             background-repeat: no-repeat;
 
         }
         .restock_yellow {
-            background-image: url(https://shopping.c.yimg.jp/lib/asoboze/asoindex_113.jpg);
+            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asoindex_113.jpg);
             background-size: contain;
             background-position: right top;
             background-repeat: no-repeat;
@@ -159,42 +154,42 @@ a img {
         }
 
         .new {
-            background-image: url(https://shopping.c.yimg.jp/lib/asoboze/asoindex_24.jpg);
+            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asoindex_24.jpg);
             background-size: contain;
             background-position: right top;
             background-repeat: no-repeat;
 
         }
         .new_gray {
-            background-image: url(https://shopping.c.yimg.jp/lib/asoboze/asoindex_116.jpg);
+            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asoindex_116.jpg);
             background-size: contain;
             background-position: right top;
             background-repeat: no-repeat;
 
         }
         .new_brown {
-            background-image: url(https://shopping.c.yimg.jp/lib/asoboze/asoindex_115.jpg);
+            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asoindex_115.jpg);
             background-size: contain;
             background-position: right top;
             background-repeat: no-repeat;
 
         }
         .popular {
-            background-image: url(https://shopping.c.yimg.jp/lib/asoboze/asoindex_74.jpg);
+            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asoindex_74.jpg);
             background-size:contain;
             background-position: right top;
             background-repeat: no-repeat;
 
         }
         .popular_yellow {
-            background-image: url(https://shopping.c.yimg.jp/lib/asoboze/asoindex_118.jpg);
+            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asoindex_118.jpg);
             background-size:contain;
             background-position: right top;
             background-repeat: no-repeat;
 
         }
         .popular_gray {
-            background-image: url(https://shopping.c.yimg.jp/lib/asoboze/asoindex_117.jpg);
+            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asoindex_117.jpg);
             background-size:contain;
             background-position: right top;
             background-repeat: no-repeat;
@@ -305,11 +300,7 @@ a img {
             padding-bottom: 70%;
             padding-top: 2%;
             margin-bottom: 30px;
-			padding-left: 0;
         }
-		.contents_aso {
-        padding: 0;
-    }
         .asomidashi_eng {
             text-align: center;
             font-weight: 700;
@@ -349,8 +340,7 @@ a img {
             width: 100%;
         }
         .pricebutton a img {
-            width: 100%;
-            margin: 0;
+            width: 90%;
             padding:6px 5%;
         }
         .contentbutton {
@@ -359,11 +349,11 @@ a img {
         .contentbutton a img {
             width: 90%;
             padding: 3px 5%;
+            margin: 0;
         }
         .contentbutton .contentsns {
             width: 100%;
             padding: 3px 5%;
-			display: inline-block;
         }
         .contentbutton .contentsns a img {
             width: 50%;
@@ -373,8 +363,6 @@ a img {
         }
         .guide_aso {
             width: 100%;
-			display: inline-block;
-            padding: 0;
         }
         .guide_grids {
             width: 90%;
@@ -562,10 +550,9 @@ input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
         }
         .rank_aso {
             width: 90%;
-            margin: 10px 5%;
+            margin: 0 5%;
             position: relative;
             height: auto;
-			padding: 0;
         }
         .rank_4lines {
             width: 100%;
@@ -586,19 +573,19 @@ input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
             display: block;
         }
         .rank_4lines .rank_1 {
-            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/asoindex_123.png);
+            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asoindex_123.png);
         }
         .rank_1 img {
             margin-top: 30px;
         }
         .rank_4lines .rank_2 {
-            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/asoindex_124.png);
+            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asoindex_124.png);
         }
         .rank_2 img {
             margin-top: 30px;
         }
         .rank_4lines .rank_3 {
-            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/asoindex_119.png);
+            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asoindex_119.png);
         }
         .rank_3 img {
             margin-top: 30px;
@@ -688,8 +675,7 @@ input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
         grid-template-columns: auto auto;
     }
     
-}
-@media screen and (max-width: 760px) and (min-width: 600px) {
+@media screen and (min-width: 600px) {
     .btn {
         right: 80px;
         width: 30px;
@@ -767,9 +753,7 @@ input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
     .contents_aso {
         clear: both;
         margin-top: 43px;
-		padding: 0;
     }
-	
     .contents_aso .contentbutton.sponly {
         display: none;
     }
@@ -807,13 +791,11 @@ input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
         .contentbutton .contentsns {
             width: 100%;
             padding: 1vh 2.5%;
-			display: inline-block;
         }
     .contentbutton .contentsns a {
             margin: 0;
             padding: 0;
         border: none;
-		height: 100%;
         display: block;
         float: left;
     }
