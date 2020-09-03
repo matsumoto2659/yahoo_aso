@@ -20,7 +20,7 @@
     transform: translateX(0);
 }
 #humb-open + #pcmenu_aso:hover {
-    overflow: hidden;
+    overflow: auto;
 	-webkit-overflow-scrolling:touch;
     z-index: 99;
     right: 0;
