@@ -49,7 +49,7 @@
     }
     .contents_container {
         width: calc(95vw - 140px);
-        margin-left: 5%;
+        margin: 0 auto;
     }
     .contents_container img {
         width: 100%;
@@ -1305,7 +1305,7 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
         }
         .aso_pcleft:first-child > a:first-child img {
             padding-left: 30%;
-            width: 40%;
+            width: 20px;
         }
         .cate_image .cate_text {
             font-size: 10.67px;
