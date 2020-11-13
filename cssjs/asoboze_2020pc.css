@@ -1587,6 +1587,7 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
         width: 75vw;
         margin-left: 5vw;
     }
+}
 	@media screen and (min-width: 760px) and (orientation: portrait) {
     .topthree .text {
         left: 82vw;
@@ -1604,6 +1605,29 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
         top: 40vh;
     }
 	    }    
+.index_2020dec {
+    display: inline-grid;
+    grid-template-columns: 150px 150px 150px;
+            grid-template-rows: auto;
+    grid-column-gap: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+                }
+
+@media screen and (min-width: 1200px) {
+.index_2020dec {
+    display: inline-grid;
+            grid-template-columns: 250px 250px 250px;
+            grid-template-rows: auto;
+            grid-column-gap: 80px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+                }
 }
-@media screen and (max-width: 1000px) {
-   
+
+    .indexParts_2020dec a {
+        color: #3e3a39;
+        text-decoration: none;
+    }
