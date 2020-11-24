@@ -41,8 +41,14 @@ html{
 }
 
 /*　トップページ　wrapper　*/
-a img:hover{
-	opacity:0.8;
+a img {
+    transition: .2s;
+}
+a img:hover {
+    transform: scale(1.02, 1.02);
+}
+div {
+    overflow: hidden;
 }
 
 
@@ -310,7 +316,7 @@ a img:hover{
 	 max-width: 1200px;
 	box-sizing: border-box;
 	margin-bottom: 30px;
-	grid-gap: 0.5%;
+    grid-gap: 0.5%;
 }
 
 .shoukaigrid > div {
@@ -324,7 +330,7 @@ a img:hover{
 	width:150px; height:30px; background-color:#898989; color:#FFFFFF; text-align:center; text-decoration: none;
 	vertical-align: middle;
 border-radius: 3px;
-border: 1px solid #898989;
+    border: 1px solid #898989;
 }
 .kuwashikumiru a {
 	text-decoration: none;
@@ -378,9 +384,7 @@ border: 1px solid #898989;
 	padding: 10px;
 	text-align:center;
 }
-.snslogos a img:hover {
-	opacity:0.8;
-}
+
 .snslogos {
 	width:500px;
 	margin:60px auto 0;
@@ -828,7 +832,7 @@ border: 1px solid #898989;
 .sfbanner.side1{
 	top: 240px;
 	position: absolute;
-	background-image: url("https://shopping.geocities.jp/asoboze/asobozeyahoo/top_main_images/asset2.png");
+	background-image: url("https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asset2.png");
 	background-repeat: no-repeat;
 	background-size: 30px;
 	background-position: 3px;
@@ -836,7 +840,7 @@ border: 1px solid #898989;
 .sfbanner.side1:hover{
 	top: 240px;
 	position: absolute;
-	background-image: url("https://shopping.geocities.jp/asoboze/asobozeyahoo/top_main_images/asset4.png");
+	background-image: url("https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asset4.png");
 	background-repeat: no-repeat;
 	background-size: 30px;
 	background-position: 3px;
@@ -847,7 +851,7 @@ border: 1px solid #898989;
 .sfbanner.side2{
 	top: 290px;
 	position: absolute;
-	background-image: url("https://shopping.geocities.jp/asoboze/asobozeyahoo/top_main_images/asset3.png");
+	background-image: url("https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asset3.png");
 	background-repeat: no-repeat;
 	background-size: 30px;
 	background-position: 3px;
@@ -855,7 +859,7 @@ border: 1px solid #898989;
 .sfbanner.side2:hover{
 	top: 290px;
 	position: absolute;
-	background-image: url("https://shopping.geocities.jp/asoboze/asobozeyahoo/top_main_images/asset5.png");
+	background-image: url("https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asset5.png");
 	background-repeat: no-repeat;
 	background-size: 30px;
 	background-position: 3px;
@@ -865,7 +869,7 @@ border: 1px solid #898989;
 .sfbanner.side3{
 	top: 340px;
 	position: absolute;
-	background-image: url("https://shopping.geocities.jp/asoboze/asobozeyahoo/top_main_images/asset7.png");
+	background-image: url("https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asset7.png");
 	background-repeat: no-repeat;
 	background-size: 30px;
 	background-position: 3px;
@@ -873,7 +877,7 @@ border: 1px solid #898989;
 .sfbanner.side3:hover{
 	top: 340px;
 	position: absolute;
-	background-image: url("https://shopping.geocities.jp/asoboze/asobozeyahoo/top_main_images/asset6.png");
+	background-image: url("https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asset6.png");
 	background-repeat: no-repeat;
 	background-size: 30px;
 	background-position: 3px;
@@ -883,7 +887,7 @@ border: 1px solid #898989;
 .sfbanner.side4{
 	top: 390px;
 	position: absolute;
-	background-image: url("https://shopping.geocities.jp/asoboze/asobozeyahoo/top_main_images/asset8.png");
+	background-image: url("https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asset8.png");
 	background-repeat: no-repeat;
 	background-size: 30px;
 	background-position: 3px;
@@ -891,7 +895,7 @@ border: 1px solid #898989;
 .sfbanner.side4:hover{
 	top: 390px;
 	position: absolute;
-	background-image: url("https://shopping.geocities.jp/asoboze/asobozeyahoo/top_main_images/asset1.png");
+	background-image: url("https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asset1.png");
 	background-repeat: no-repeat;
 	background-size: 30px;
 	background-position: 3px;
@@ -952,7 +956,7 @@ transition: 1.0s;
 	max-width: 1200px;
 	width: 100%;
 	border: none;
-	margin: 0 auto;
+    margin: 0 auto;
 	box-sizing: border-box;
 }
 	.tokubox2 .cont-box2 {
@@ -1087,6 +1091,7 @@ transition: 1.0s;
 .mente01 .suuzi {
 	font-size:28px;
 	text-align:center;
+
 	line-height: 1.5;
 	letter-spacing: 0.1em;
 	word-break: normal;
@@ -1281,9 +1286,9 @@ transition: 1.0s;
 	padding:1em 2em;
 
 	width: 400px;
+     
+     min-width: max-content;
 
-    min-width: max-content;
-	 
 	font-family: 'Roboto', 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, sans-serif;
 
 	text-align:center;
@@ -1703,6 +1708,7 @@ table.gallerytable{
 .shoukaigrid .galleryshohin{
 	width: 100%;
 	float:left;
+    overflow: hidden;
 	margin-bottom:50px;
 	box-sizing: border-box;
 }
@@ -1929,7 +1935,7 @@ img[id*="large"]{
 /* レビューギャラリー　ホバーでコメント表示 */
 
 		.small1 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_17acover.jpg);
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_17acover.jpg);
 			background-size: 300px;
 			background-repeat: no-repeat;
 			background-position: center left;
@@ -1939,7 +1945,7 @@ img[id*="large"]{
 		}
 
 		.small2 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_02acover.jpg);			background-size: 300px;
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_02acover.jpg);			background-size: 300px;
 background-repeat: no-repeat;
 			background-position: center left;
 		}
@@ -1948,7 +1954,7 @@ background-repeat: no-repeat;
 		}
 
 		.small3 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_20acover.jpg);			background-size: 300px;
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_20acover.jpg);			background-size: 300px;
 background-repeat: no-repeat;
 			background-position: center left;
 		}
@@ -1957,7 +1963,7 @@ background-repeat: no-repeat;
 		}
 
 		.small4 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_21cover.jpg);			background-size: 300px;
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_21cover.jpg);			background-size: 300px;
 background-repeat: no-repeat;
 			background-position: center left;
 		}
@@ -1966,7 +1972,7 @@ background-repeat: no-repeat;
 		}
 
 		.small5 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_19acover.jpg);			background-size: 300px;
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_19acover.jpg);			background-size: 300px;
 background-repeat: no-repeat;
 			background-position: center left;
 		}
@@ -1975,7 +1981,7 @@ background-repeat: no-repeat;
 		}
 
 		.small6 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_18acover.jpg);			background-size: 300px;
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_18acover.jpg);			background-size: 300px;
 background-repeat: no-repeat;
 			background-position: center left;
 		}
@@ -1984,7 +1990,7 @@ background-repeat: no-repeat;
 		}
 
 		.small7 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_15acover.jpg);			background-size: 300px;
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_15acover.jpg);			background-size: 300px;
 background-repeat: no-repeat;
 			background-position: center left;
 		}
@@ -1993,7 +1999,7 @@ background-repeat: no-repeat;
 		}
 
 		.small8 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_12acover.jpg);			background-size: 300px;
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_12acover.jpg);			background-size: 300px;
 background-repeat: no-repeat;
 			background-position: center left;
 		}
@@ -2002,7 +2008,7 @@ background-repeat: no-repeat;
 		}
 
 		.small9 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_11acover.jpg);			background-size: 300px;
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_11acover.jpg);			background-size: 300px;
 background-repeat: no-repeat;
 			background-position: center left;
 		}
@@ -2011,7 +2017,7 @@ background-repeat: no-repeat;
 		}
 
 		.small10 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_14acover.jpg);			background-size: 300px;
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_14acover.jpg);			background-size: 300px;
 background-repeat: no-repeat;
 			background-position: center left;
 		}
@@ -2020,7 +2026,7 @@ background-repeat: no-repeat;
 		}
 
 		.small11 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_13acover.jpg);			background-size: 300px;
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_13acover.jpg);			background-size: 300px;
 background-repeat: no-repeat;
 			background-position: center left;
 		}
@@ -2029,7 +2035,7 @@ background-repeat: no-repeat;
 		}
 
 		.small12 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_16acover.jpg);			background-size: 300px;
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_16acover.jpg);			background-size: 300px;
 background-repeat: no-repeat;
 			background-position: center left;
 		}
@@ -2037,7 +2043,7 @@ background-repeat: no-repeat;
 			opacity: 0;
 		}
 		.small13 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_matsu01cover.jpg);
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_matsu01cover.jpg);
 			background-size: 300px;
 			background-repeat: no-repeat;
 			background-position: center left;
@@ -2047,7 +2053,7 @@ background-repeat: no-repeat;
 		}
 
 		.small14 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_walpac02cover.jpg);
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_walpac02cover.jpg);
 background-repeat: no-repeat;
 			background-size: 300px;
 			background-position: center left;
@@ -2057,7 +2063,7 @@ background-repeat: no-repeat;
 		}
 
 		.small15 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_walpac01cover.jpg);
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_walpac01cover.jpg);
 background-repeat: no-repeat;
 			background-position: center left;
 			background-size: 300px;
@@ -2067,7 +2073,7 @@ background-repeat: no-repeat;
 		}
 
 		.small16 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_toft01cover.jpg);
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_toft01cover.jpg);
 background-repeat: no-repeat;
 			background-position: center left;
 			background-size: 300px;
@@ -2077,7 +2083,7 @@ background-repeat: no-repeat;
 		}
 
 		.small17 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_2way01cover.jpg);
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_2way01cover.jpg);
 			background-size: 300px;
 background-repeat: no-repeat;
 			background-position: center left;
@@ -2087,7 +2093,7 @@ background-repeat: no-repeat;
 		}
 
 		.small18 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_rint01cover.jpg);
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_rint01cover.jpg);
 			background-size: 300px;
 background-repeat: no-repeat;
 			background-position: center left;
@@ -2097,7 +2103,7 @@ background-repeat: no-repeat;
 		}
 
 		.small19 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_regile01cover.jpg);
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_regile01cover.jpg);
 			background-size: 300px;
 background-repeat: no-repeat;
 			background-position: center left;
@@ -2107,7 +2113,7 @@ background-repeat: no-repeat;
 		}
 
 		.small20 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_regile03cover.jpg);
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_regile03cover.jpg);
 			background-size: 300px;
 background-repeat: no-repeat;
 			background-position: center left;
@@ -2117,7 +2123,7 @@ background-repeat: no-repeat;
 		}
 
 		.small21 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_regile02cover.jpg);
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_regile02cover.jpg);
 			background-size: 300px;
 background-repeat: no-repeat;
 			background-position: center left;
@@ -2127,7 +2133,7 @@ background-repeat: no-repeat;
 		}
 
 		.small22 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_regile04cover.jpg);
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_regile04cover.jpg);
 			background-size: 300px;
 background-repeat: no-repeat;
 			background-position: center left;
@@ -2137,7 +2143,7 @@ background-repeat: no-repeat;
 		}
 
 		.small23 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_mono01cover.jpg);
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_mono01cover.jpg);
 			background-size: 300px;
 background-repeat: no-repeat;
 			background-position: center left;
@@ -2147,7 +2153,7 @@ background-repeat: no-repeat;
 		}
 
 		.small24 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_case01cover.jpg);
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_case01cover.jpg);
 			background-size: 300px;
 background-repeat: no-repeat;
 			background-position: center left;
@@ -2156,7 +2162,7 @@ background-repeat: no-repeat;
 			opacity: 0;
 		}
 		.small25 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_16202cover.jpg);
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_16202cover.jpg);
 			background-size: 300px;
 background-repeat: no-repeat;
 			background-position: center left;
@@ -2166,7 +2172,7 @@ background-repeat: no-repeat;
 		}
 
 		.small26 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_2way02cover.jpg);
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_2way02cover.jpg);
 			background-size: 300px;
 background-repeat: no-repeat;
 			background-position: center left;
@@ -2176,7 +2182,7 @@ background-repeat: no-repeat;
 		}
 
 		.small27 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_01001cover.jpg);
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_01001cover.jpg);
 			background-size: 300px;
 background-repeat: no-repeat;
 			background-position: center left;
@@ -2186,7 +2192,7 @@ background-repeat: no-repeat;
 		}
 
 		.small28 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_07201cover.jpg);
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_07201cover.jpg);
 			background-size: 300px;
 background-repeat: no-repeat;
 			background-position: center left;
@@ -2196,7 +2202,7 @@ background-repeat: no-repeat;
 		}
 
 		.small29 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_11302cover.jpg);
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_11302cover.jpg);
 			background-size: 300px;
 background-repeat: no-repeat;
 			background-position: center left;
@@ -2206,7 +2212,7 @@ background-repeat: no-repeat;
 		}
 
 		.small30 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_toft02cover.jpg);
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_toft02cover.jpg);
 			background-size: 300px;
 background-repeat: no-repeat;
 			background-position: center left;
@@ -2216,7 +2222,7 @@ background-repeat: no-repeat;
 		}
 
 		.small31 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_cdj01cover.jpg);
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_cdj01cover.jpg);
 			background-size: 300px;
 background-repeat: no-repeat;
 			background-position: center left;
@@ -2226,7 +2232,7 @@ background-repeat: no-repeat;
 		}
 
 		.small32 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_17002cover.jpg);
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_17002cover.jpg);
 			background-size: 300px;
 background-repeat: no-repeat;
 			background-position: center left;
@@ -2236,7 +2242,7 @@ background-repeat: no-repeat;
 		}
 
 		.small33 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_168l02cover.jpg);
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_168l02cover.jpg);
 			background-size: 300px;
 background-repeat: no-repeat;
 			background-position: center left;
@@ -2246,7 +2252,7 @@ background-repeat: no-repeat;
 		}
 
 		.small34 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_168m02cover.jpg);
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_168m02cover.jpg);
 			background-size: 300px;
 background-repeat: no-repeat;
 			background-position: center left;
@@ -2256,7 +2262,7 @@ background-repeat: no-repeat;
 		}
 
 		.small35 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_body02cover.jpg);
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_body02cover.jpg);
 			background-size: 300px;
 background-repeat: no-repeat;
 			background-position: center left;
@@ -2266,7 +2272,7 @@ background-repeat: no-repeat;
 		}
 
 		.small36 {
-			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/reviewgallery/review_pen02cover.jpg);
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/review_pen02cover.jpg);
 			background-size: 300px;
 background-repeat: no-repeat;
 			background-position: center left;
@@ -2341,7 +2347,7 @@ background-repeat: no-repeat;
 			font-size: 18px;
 		}
 		.regileMonitor {
-			background-image: url(https://shopping.c.yimg.jp/lib/asoboze/ze-1.jpg);
+			background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/ze-1.jpg);
 			background-size: 100% auto;
 			background-repeat: no-repeat;
 			background-position: center center;

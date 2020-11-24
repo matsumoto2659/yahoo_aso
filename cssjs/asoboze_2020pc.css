@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 @media screen and (min-width: 760px) {
     .sponly {
-        display: none;
+        display: none !important;
     }
     .pconly {
         display: block;
@@ -21,13 +21,21 @@
     div, p, body {
         box-sizing: border-box;
     }
-    a img:hover {
-        opacity: 0.8;
-    }
+
+/*　トップページ　wrapper　*/
+a img {
+    transition: .5s;
+}
+a img:hover {
+    transform: scale(1.02, 1.02);
+}
+div {
+    overflow: hidden;
+}
     .swiper-container {
-				
-				width:100%;   
-				 }
+
+        width: 100%;
+    }
     .aso_linebanner {
         position: fixed;
         top: 0;
@@ -46,14 +54,18 @@
         width: 94%;
         box-sizing: border-box;
         margin-left: 0;
+        overflow: inherit;
     }
     .contents_container {
         width: calc(95vw - 140px);
         margin: 0 auto;
-		max-width: 1200px;
+        max-width: 1200px;
     }
     .contents_container img {
         width: 100%;
+    }
+    #pcthreemenu2, #pcthreemenu3, #pcrightmenu, #pcrightmenu div, #footer_aso, #footer_aso div, #pagebody, #pagebody div {
+        overflow: inherit;
     }
     .aso_pcleft {
         position: fixed;
@@ -86,6 +98,12 @@
     .container_aso {
         margin-top: 0px;
         position: relative;
+    }
+    #pcIndexRight {
+        overflow: inherit;
+    }
+    #pcIndexRight div {
+        overflow: inherit;
     }
     .pcindex_right {
         position: fixed;
@@ -213,7 +231,7 @@ input[type="checkbox"]#input-pchumbmenu + #pcmenu_aso {
 
 /*iframe???主?(??若?恰)*/
 input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
-     overflow-x: hidden;
+    overflow-x: hidden;
     overflow-y: auto;
 	-webkit-overflow-scrolling:touch;
     z-index: 99;
@@ -279,6 +297,19 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
         max-width: 95vh;
         width: 70vw;
         float: left;
+        height: auto;
+        overflow: hidden;
+        max-height: 95vh;
+    }
+    .topthree > a{
+        height: 70vw;
+    }
+    .effect {
+        overflow: inherit;
+        display: inline;
+    }
+    .topthree .effect > a {
+        height: 70vw;
     }
     .topthree .text {
         position: relative;
@@ -288,7 +319,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
         width: calc(94vw - 95vh);
         display: block;
         left: 95vh;
-
+        overflow: inherit;
         top: 0;
         height: 70vw;
         max-height: 95vh;
@@ -302,15 +333,16 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
         background-size: calc(94vw - 95vh) auto;
         background-position: bottom right;
         background-repeat: no-repeat;
+        overflow: inherit;
     }
     .brown {
-        background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/asoindexpc_11.png);
+        background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asoindexpc_11.png);
     }
     .gray {
-        background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/asoindexpc_13.png);
+        background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asoindexpc_13.png);
     }
     .yellow {
-        background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/asoindexpc_12.png);
+        background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asoindexpc_12.png);
     }
     .topthree .text::before {
         position: absolute;
@@ -372,19 +404,25 @@ font-weight: 700;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
         background-color: #666464;
-        border-radius: 2.6vw
+        border-radius: 2.6vw;
+        overflow: inherit;
+        border: 1px solid #666464;
     }
+.snslogos a img:hover {
+	opacity:0.8;
+}    
     .kuwashiku a {
         display: block;
         color: #ffffff;
         text-decoration: none;
         text-align: center;
         width: 100%;
+        height: 100%;
         line-height: 2.6vw;
         transition: .3s ease-in-out;
         box-sizing: border-box;
         font-size: 1.3vw;
-		border: 1px solid #666464;
+        border: 1px solid #666464;
         border-radius: 2.6vw;
     }
     .kuwashiku a:hover {
@@ -406,6 +444,13 @@ font-weight: 700;
             grid-row-gap: 2%;
             grid-column-gap: 2%;
         }
+    .index_grid a {
+        display: block;
+         width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    overflow: hidden;
+    }
         .index_grid .grid_2line {
             width: 100%;
             display: block;
@@ -462,6 +507,7 @@ font-weight: 700;
             width: 70%;
             margin-left: 30%;
             box-sizing: border-box;
+            display: inline-block;
         }
         .grid_1line .grid_tag {
             width: 70%;
@@ -489,6 +535,7 @@ font-weight: 700;
         }
         .grid_2line .text {
             padding: 7px 5% 0 5%;
+            display: inline-block;
         }
         .grid_1line .grid_title {
             font-size: 1.8vw;
@@ -524,18 +571,31 @@ font-weight: 700;
         grid-template-rows: auto;
         grid-template-columns: 55% 39% 6%;
         text-align: left;
-		max-width: 1200px;
+        max-width: 1200px;
     left: 50%;
     transform: translateX(-50%);
     position: relative;
-	  width: 100%;
+        width: 100%;
+    }
+    .footer_aso a img:hover {
+        transform:none;
+        opacity: 0.8;
+    }
+    .footer_aso .effect {
+        display: inline-block;
+    }
+    #footer-aso {
+        overflow: inherit;
+    }
+    #footer-aso div {
+        overflow: inherit;
     }
     .category_aso {
         grid-column: 1 / 2;
         grid-row: 1;
         float: left;
            background-color: #f9f7f5;
-        margin: 0 0 90px  calc(600px - 50vw);
+        margin: 0 0 90px calc(600px - 50vw);
         display: inline-block;
     }
     .asomidashi_eng {
@@ -543,11 +603,11 @@ font-weight: 700;
 font-weight: 700;
         display: inline-block;
         font-size: 1.4vw;
-        margin: 5vh 3vw 6vh;
+        margin: 5vh 3vw 6vh 0;
         padding-left: 1vw;
         letter-spacing: .4em;
     }
-	 .category_aso .asomidashi_eng {
+    .category_aso .asomidashi_eng {
         position: relative;
         left: calc(50vw - 600px);
     }
@@ -575,7 +635,7 @@ font-weight: 700;
             float: left;
         }
         .cate_image a img {
-             width: 100%;
+            width: 100%;
             padding: 0 10% 5% 10%;
             box-sizing: border-box;
         }
@@ -593,6 +653,7 @@ font-weight: 700;
         }
         .pricebutton a img {
             width: 90%;
+            box-sizing: border-box;
             padding:12px 5%;
             margin: 0 15%;
         }
@@ -616,10 +677,10 @@ font-weight: 700;
             width: 25%;
             display: inline-block;
             float: left;
-			 box-sizing: border-box;
+            box-sizing: border-box;
         }
     .contentbutton a:nth-child(1) {
-        
+
         border-left: 1px solid #dacec8;
     }
     .contentbutton a:nth-child(5) {
@@ -690,26 +751,26 @@ font-weight: 700;
         }
     
         .rank_4lines .rank_1 {
-            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/asoindexpc_25.png);
+            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asoindexpc_25.png);
         }
         .rank_1 img, .rank_2 img, .rank_3 img, .rank_5 img, .rank_4 img {
             margin-top: 30px;
         }
         .rank_4lines .rank_2 {
-            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/asoindexpc_26.png);
+            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asoindexpc_26.png);
         }
         .rank_4lines .rank_3 {
-            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/asoindexpc_27.png);
+            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asoindexpc_27.png);
         }
         .rank_4lines .rank_4 {
             background-size: auto 25%;
             background-position: 0 20%;
-            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/asoindexpc_28.png);
+            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asoindexpc_28.png);
         }
         .rank_4lines .rank_5 {
             background-size: auto 25%;
             background-position: 0 20%;
-            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/asoindexpc_29.png);
+            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asoindexpc_29.png);
         }
         .rank_date {
             width: 100%;
@@ -766,7 +827,7 @@ font-weight: 700;
         grid-column: 1 / 3;
             grid-row: 7;
             width: 94vw;
-			margin-left: calc(600px - 50vw);
+            margin-left: calc(600px - 50vw);
             background-color: #666464;
             justify-content: center;
         }
@@ -959,6 +1020,7 @@ font-weight: 700;
             top: calc(175px + 5vh);
             width: 120px;
             height: auto;
+            overflow: inherit;
             box-sizing: border-box;
         }
         .pick_brand div {
@@ -1118,7 +1180,7 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
         .pick_brand .pickup .pick_copy div {
             width: 100%;
             height: 100px;
-            background: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/asoindexpc_46.png);
+            background: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asoindexpc_46.png);
             background-size: 100% auto;
             background-position: center;
             background-repeat: no-repeat;
@@ -1171,6 +1233,7 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
             margin-top: 50%;
         }        
         #pick_01 {
+
             grid-row: 1;
             grid-column: 1;
         }
@@ -1263,6 +1326,27 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
     .pcsetsumei .sponly {
         display: inherit;
     }
+        .tohyowrapper {
+            display: inline-grid;
+            grid-template-columns: 45% 45%;
+            grid-column-gap: 10%;
+            width: 80%;
+            position: relative;
+            margin-bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .kuwashikumiru {
+            width: max-content;
+            height: auto;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 20px;
+        }
+        .kuwashikumiru a {
+            padding: 10px 20px;
+        }
 
 }
     @media screen and (orientation: landscape) and (max-aspect-ratio: 8 / 5) {
@@ -1270,6 +1354,71 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
             margin-left: 10%;
             display: inline-block;
         }
+                .contents_container {
+            color: #727171;
+        }
+        .staffreview_title {
+            max-width: 430px;
+            margin: 4vh auto 4vh;
+            width: 60%;
+            display: block;
+        }
+        .staffreview_paragraph {
+            font-size: 18px;
+            color: #727171;
+            width: max-content;
+            margin: auto;
+            display: block;
+        }
+        .staffreview_index {
+            max-width: 100vw;
+            border-bottom: 1.5px solid #595757;
+            margin-bottom: 50px;
+        }
+        .staffreview_index ul {
+            padding: 50px 45px;
+        }
+        .staffreview_index ul li {
+            display: inline-block;
+            padding: 7px 46px;
+            border-right: 1px solid #727171;
+        }
+        .staffreview_index ul li:first-child {
+            border-left: 1px solid #727171;
+        }
+        .staffreview_contents {
+            display: inline-grid;
+            grid-template-columns: 280px 280px 280px;
+            grid-column-gap: 60px;
+            width: max-content;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            padding-bottom: 50px;
+            border-bottom: 1px solid #595757;
+        }
+        .staffreview_item_img {
+            margin-bottom: 25px;
+        }
+        .staffreview_discription {
+            margin-bottom: 25px;
+        }
+        .staffreview_discription a {
+            color: #000000;
+            font-size: 18px;
+            text-decoration: none;
+            display: block;
+            line-height: 1.75em;
+            transition-duration: .1s;
+        }
+        .staffreview_discription a:hover {
+            color: #bbbbbb;
+        }
+        .staffreview_data {
+            color: #727171;
+            font-size: 14px;
+        }
+
         .topthree .text {
             left: 60vw;
             width: 34vw;
@@ -1287,6 +1436,13 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
         }
         .topthree a {
             width: 60vw;
+        }
+        .topthree > a{
+            height: 60vw;
+            
+        }
+        .topthree .effect > a {
+            height: 60vw;
         }
         .kuwashiku a {
             width: 100%;
@@ -1352,7 +1508,7 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
     .pick_brand .pickup .pick_copy {
         height: 150px;
     }
-	 .copyright_aso {
+    .copyright_aso {
         margin-left: 0;
     }
 }
@@ -1360,12 +1516,12 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
     .copyright_aso {
         margin-left: 0;
     }
-	   .cate_images {
-		   width: 100%;
+    .cate_images {
+        width: 100%;
     }
     .pricebutton a img {
         width: 80%;
-		 padding: 6px 0;
+        padding: 6px 0;
         margin: 0 10%;
         box-sizing: border-box;
     }
@@ -1384,7 +1540,7 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
     .guide_aso {
         padding: 0 10vw;
     }
-	.footerguide {
+    .footerguide {
         grid-gap: 10px 50px;
         width: 80vw;
         margin-left: 10vw;
@@ -1393,12 +1549,12 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
         max-width: 85vw;
     }
 
-	}
+}
 @media screen and (orientation: landscape) and (max-height: 800px) or (max-width: 1200px) {
         .pcmenu_aso {
             height: 95%;
         }
-		
+    
 }
 @media screen and (max-width: 800px) {
             .category_blocks {
@@ -1588,7 +1744,7 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
         margin-left: 5vw;
     }
 }
-	@media screen and (min-width: 760px) and (orientation: portrait) {
+@media screen and (min-width: 760px) and (orientation: portrait) {
     .topthree .text {
         left: 82vw;
     }
@@ -1603,8 +1759,8 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
     }
     .kuwashiku {
         top: 40vh;
-    }
-	    }    
+    }    
+}
 .index_2020dec {
     display: inline-grid;
     grid-template-columns: 150px 150px 150px;
@@ -1625,9 +1781,75 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
     left: 50%;
     transform: translateX(-50%);
                 }
+        .contents_container {
+            color: #727171;
+        }
+        .staffreview_title {
+            max-width: 430px;
+            margin: 4vh auto 4vh;
+            width: 60%;
+            display: block;
+        }
+        .staffreview_paragraph {
+            font-size: 24px;
+            color: #727171;
+            width: max-content;
+            margin: auto;
+            display: block;
+        }
+        .staffreview_index {
+            max-width: 100vw;
+            border-bottom: 1.5px solid #595757;
+            margin-bottom: 50px;
+        }
+        .staffreview_index ul {
+            padding: 50px 45px;
+        }
+        .staffreview_index ul li {
+            display: inline-block;
+            padding: 7px 46px;
+            border-right: 1px solid #727171;
+        }
+        .staffreview_index ul li:first-child {
+            border-left: 1px solid #727171;
+        }
+        .staffreview_contents {
+            display: inline-grid;
+            grid-template-columns: 330px 330px 330px;
+            grid-column-gap: 100px;
+            width: max-content;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            padding-bottom: 50px;
+            border-bottom: 1px solid #595757;
+        }
+        .staffreview_item_img {
+            margin-bottom: 25px;
+        }
+        .staffreview_discription {
+            margin-bottom: 25px;
+        }
+        .staffreview_discription a {
+            color: #000000;
+            font-size: 24px;
+            text-decoration: none;
+            display: block;
+            line-height: 1.75em;
+            transition-duration: .1s;
+        }
+        .staffreview_discription a:hover {
+            color: #bbbbbb;
+        }
+        .staffreview_data {
+            color: #727171;
+            font-size: 18px;
+        }
+    
 }
 
     .indexParts_2020dec a {
         color: #3e3a39;
         text-decoration: none;
     }
+

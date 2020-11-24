@@ -30,7 +30,7 @@ a img {
             color: #3e3a39;
             text-align-last: left;
         }
-		 .cntr20 p {
+    .cntr20 p {
     font-size: 16px;
     text-align: center;
     font-weight: bold;
@@ -88,7 +88,7 @@ line-height: 1.4em;
     padding: 0 30px 10px 30px;
     letter-spacing: -0.05em;
 }
-
+    
         .clearbox {
             clear: both;
         }
@@ -101,13 +101,13 @@ line-height: 1.4em;
     .contents_container img {
         width: 100%;
     }
-	.contents_container button {
+    .contents_container button {
         height: max-content;
         background:none;
         border: none;
 
-        }
-		.spheader_aso {
+    }
+        .spheader_aso {
             background-color: #666464;
             width: 100%;
             height: 50px;
@@ -196,21 +196,21 @@ line-height: 1.4em;
             background-repeat: no-repeat;
         }
         .restock {
-            background-image: url(https://shopping.c.yimg.jp/lib/asoboze/asoindex_23.jpg);
+            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asoindex_23.jpg);
             background-size: contain;
             background-position: right top;
             background-repeat: no-repeat;
 
         }
         .restock_brown {
-            background-image: url(https://shopping.c.yimg.jp/lib/asoboze/asoindex_114.jpg);
+            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asoindex_114.jpg);
             background-size: contain;
             background-position: right top;
             background-repeat: no-repeat;
 
         }
         .restock_yellow {
-            background-image: url(https://shopping.c.yimg.jp/lib/asoboze/asoindex_113.jpg);
+            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asoindex_113.jpg);
             background-size: contain;
             background-position: right top;
             background-repeat: no-repeat;
@@ -218,42 +218,42 @@ line-height: 1.4em;
         }
 
         .new {
-            background-image: url(https://shopping.c.yimg.jp/lib/asoboze/asoindex_24.jpg);
+            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asoindex_24.jpg);
             background-size: contain;
             background-position: right top;
             background-repeat: no-repeat;
 
         }
         .new_gray {
-            background-image: url(https://shopping.c.yimg.jp/lib/asoboze/asoindex_116.jpg);
+            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asoindex_116.jpg);
             background-size: contain;
             background-position: right top;
             background-repeat: no-repeat;
 
         }
         .new_brown {
-            background-image: url(https://shopping.c.yimg.jp/lib/asoboze/asoindex_115.jpg);
+            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asoindex_115.jpg);
             background-size: contain;
             background-position: right top;
             background-repeat: no-repeat;
 
         }
         .popular {
-            background-image: url(https://shopping.c.yimg.jp/lib/asoboze/asoindex_74.jpg);
+            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asoindex_74.jpg);
             background-size:contain;
             background-position: right top;
             background-repeat: no-repeat;
 
         }
         .popular_yellow {
-            background-image: url(https://shopping.c.yimg.jp/lib/asoboze/asoindex_118.jpg);
+            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asoindex_118.jpg);
             background-size:contain;
             background-position: right top;
             background-repeat: no-repeat;
 
         }
         .popular_gray {
-            background-image: url(https://shopping.c.yimg.jp/lib/asoboze/asoindex_117.jpg);
+            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asoindex_117.jpg);
             background-size:contain;
             background-position: right top;
             background-repeat: no-repeat;
@@ -364,9 +364,9 @@ line-height: 1.4em;
             padding-bottom: 70%;
             padding-top: 2%;
             margin-bottom: 30px;
-			padding-left: 0;
+            padding-left: 0;
         }
-		.contents_aso {
+    .contents_aso {
         padding: 0;
     }
         .asomidashi_eng {
@@ -410,7 +410,7 @@ line-height: 1.4em;
         .pricebutton a img {
             width: 100%;
             margin: 0;
-			box-sizing: border-box;
+            box-sizing: border-box;
             padding:6px 5%;
         }
         .contentbutton {
@@ -423,7 +423,7 @@ line-height: 1.4em;
         .contentbutton .contentsns {
             width: 100%;
             padding: 3px 5%;
-			display: inline-block;
+            display: inline-block;
         }
         .contentbutton .contentsns a img {
             width: 50%;
@@ -432,9 +432,9 @@ line-height: 1.4em;
             padding: 0;
         }
         .guide_aso {
-            width: 100%;
-			display: inline-block;
+            display: inline-block;
             padding: 0;
+            width: 100%;
         }
         .guide_grids {
             width: 90%;
@@ -625,7 +625,7 @@ input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
             margin: 10px 5%;
             position: relative;
             height: auto;
-			padding: 0;
+            padding: 0;
         }
         .rank_4lines {
             width: 100%;
@@ -646,19 +646,19 @@ input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
             display: block;
         }
         .rank_4lines .rank_1 {
-            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/asoindex_123.png);
+            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asoindex_123.png);
         }
         .rank_1 img {
             margin-top: 30px;
         }
         .rank_4lines .rank_2 {
-            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/asoindex_124.png);
+            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asoindex_124.png);
         }
         .rank_2 img {
             margin-top: 30px;
         }
         .rank_4lines .rank_3 {
-            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/images/asoindex_119.png);
+            background-image: url(https://shopping.geocities.jp/asoboze/asobozeyahoo/2020renew500over/asoindex_119.png);
         }
         .rank_3 img {
             margin-top: 30px;
@@ -747,6 +747,92 @@ input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
         grid-template-rows: auto auto;
         grid-template-columns: auto auto;
     }
+            .staffreview_title {
+            max-width: 430px;
+            margin: 2vh auto 2vh;
+            width: 60%;
+            display: block;
+        }
+        .staffreview_paragraph {
+            font-size: 12px;
+            color: #727171;
+            width: max-content;
+            margin: auto;
+            display: block;
+        }
+        .staffreview_index {
+            max-width: 90vw;
+            border-bottom: 1.5px solid #595757;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-bottom: 20px;
+        }
+        .staffreview_index ul {
+            padding: 10px 5px;
+        }
+        .staffreview_index ul li {
+            display: inline-block;
+            padding: 5px 20px;
+            margin-bottom: 20px;
+            border-right: 1px solid #727171;
+            font-size: 12px
+        }
+        .staffreview_index ul li:first-child {
+            border-left: 1px solid #727171;
+        }
+        .staffreview_contents {
+            grid-template-columns: 100vw;
+            padding-bottom: 20px;
+            grid-row-gap: 50px;
+            border-bottom: 1px solid #595757;
+        }
+        .staffreview_item_img {
+            margin-bottom: 20px;
+        }
+        .staffreview_discription {
+            margin-bottom: 20px;
+        }
+        .staffreview_discription a {
+            color: #000000;
+            font-size: 18px;
+            text-decoration: none;
+            display: block;
+            padding-left: 20px;
+            line-height: 1.75em;
+            transition-duration: .1s;
+        }
+        .staffreview_discription a:hover {
+            color: #bbbbbb;
+        }
+        .staffreview_data {
+            color: #727171;
+            font-size: 12px;
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+        .tohyowrapper {
+            display: inline-grid;
+            grid-template-columns: 100%;
+            grid-row-gap: 30px;
+            margin-bottom: 30px;
+            width: 80%;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .kuwashikumiru {
+            width: max-content;
+            height: auto;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 20px;
+        }
+        .kuwashikumiru a {
+            padding: 10px 20px;
+        }
+
     
 }
 @media screen and (max-width: 760px) and (min-width: 600px) {
@@ -827,9 +913,9 @@ input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
     .contents_aso {
         clear: both;
         margin-top: 43px;
-		padding: 0;
+        padding: 0;
     }
-	
+
     .contents_aso .contentbutton.sponly {
         display: none;
     }
@@ -867,13 +953,13 @@ input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
         .contentbutton .contentsns {
             width: 100%;
             padding: 1vh 2.5%;
-			display: inline-block;
+            display: inline-block;
         }
     .contentbutton .contentsns a {
             margin: 0;
             padding: 0;
         border: none;
-		height: 100%;
+        height: 100%;
         display: block;
         float: left;
     }
@@ -929,5 +1015,5 @@ input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
         margin: 0 2.5%;
     }
 
-
 }
+
